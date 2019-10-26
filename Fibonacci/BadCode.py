@@ -7,6 +7,6 @@ Bad Code (actual entry)
 """
 n = int(input("Index? "))  # Not counted
 l=[0]  # Counted
-if n>1:l+=[1]  # Counted
-for x in range(n-2):l+=[l[x]+l[x+1]]  # Counted
-print(l)  # Not counted
+if n>0:l+=[1]  # Counted
+for x in range(n-1):l+=[l[x]+l[x+1]]  # Counted
+print(l[-1])  # Not counted
